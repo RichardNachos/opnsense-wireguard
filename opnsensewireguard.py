@@ -30,15 +30,14 @@ opnsense_config_xml = "/conf/config.xml"
 # in a browser and drill down to the correct server package set (in the case below this would be)
 # https://pkg.freebsd.org/FreeBSD:13:amd64/quarterly/
 # If you attempt to open the All package, you'll get a 404, and that's normal.
-# What you need to do is open the packagesite.txz file using something like 7zip or winrar 
+# What you need to do is open the packagesite.txz file
 # and get into the packagesite.yaml file using a text editor.
 # search for {"name":"png" and somewhere down that line there will be a "repopath":"All/png-1.6.37_1.pkg"
 # you add that to the package set above to get a url that looks like the links below.
 # then, search for {"name":"libqrencode" and grab the "repopath":"All/libqrencode-4.1.1.pkg" 
-PNG_PKG = "https://pkg.freebsd.org/FreeBSD:13:amd64/quarterly/All/png-1.6.37_1.pkg"
-QR_PKG = "https://pkg.freebsd.org/FreeBSD:13:amd64/quarterly/All/libqrencode-4.1.1.pkg"
-
-
+# These are correct as of 23.7.7
+PNG_PKG = "https://pkg.freebsd.org/FreeBSD:13:amd64/release_2/All/png-1.6.39.pkg"
+QR_PKG = "https://pkg.freebsd.org/FreeBSD:13:amd64/release_2/All/libqrencode-4.1.1.pkg"
 
 # Don't change anything after this.
 
